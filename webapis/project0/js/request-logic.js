@@ -4,5 +4,16 @@
 
 
 function getContentType(filename) {
-  const extension = filename.match(/.*\.([^\.]*)$/)[1];
+    const extension = filename.match(/.*\.([^\.]*)$/)[1];
+    if (extension == 'html' || extension == 'css') {
+        return ('text/' + extension);
+    }
+    else if (extension == 'jpeg' || extension == 'jpg') {
+        return('image/jpeg');
+    }
+    else {
+        return ('text/plain');
+    }
 }
+
+//console.log(getContentType('index.html'));
