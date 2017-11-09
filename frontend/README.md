@@ -4,7 +4,7 @@
 
 This program will teach you the skills you need to build interactive web applications with JavaScript and ReactJS. In just 8 weeks, you will understand and utilize the rich and powerful library that is revolutionizing front-end development by completing 3 real-world projects on your own.
 
-### *[x] Week 1
+* [x] ### Week 1
 * **JavaScript Part I**
 * Learn the basics of using JavaScript on the web.
 * **Project:** Minesweeper Part I
