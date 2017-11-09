@@ -20,5 +20,5 @@
 - [x] Created a `Board` and `Game` class
 - [x] Removed a lot of manual functionality
 - [x] Instantiated the `Game` class and played a move
-- [] Use modules to refactor code
-- [] Allow a player to play Minesweeper in the terminal
+- [ ] Use modules to refactor code
+- [ ] Allow a player to play Minesweeper in the terminal
