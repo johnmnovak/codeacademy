@@ -192,6 +192,7 @@ function deleteArticle(url, request) {
     const userArticleIds = database.users[savedArticle.username].articleIds;
     userArticleIds.splice(userArticleIds.indexOf(id), 1);
     response.status = 204;
+    //database.nextArticleId--;
   } else {
     response.status = 400;
   }
@@ -312,7 +313,7 @@ function deleteComment(url, request) {
         const articleCommentIds = database.articles[savedComment.articleId].commentIds;
         articleCommentIds.splice(articleCommentIds.indexOf(id), 1);
         response.status = 204;
-        
+        //database.nextCommentId--;  
     }
     else response.status = 404;
     
@@ -351,6 +352,22 @@ function downvoteComment(url, request) {
     else response.status = 400;
     
     return response;
+}
+
+function loadDatabase() {
+    YAML = require('yamljs');
+    const savedDatabase = YAML.load('data.yaml');
+    
+    return savedDatabase;
+    
+}
+
+function saveDatabase() {
+    const yaml = require('write-yaml');
+    yaml('data.yaml', database, function(err) {
+        if (err) console.log(err);
+    });
+    
 }
 
 // Write all code above this line.
