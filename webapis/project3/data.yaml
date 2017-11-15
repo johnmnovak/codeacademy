@@ -1,0 +1,9 @@
+users:
+  johnnovak:
+    username: johnnovak
+    articleIds: []
+    commentIds: []
+articles: {}
+nextArticleId: 1
+comments: {}
+nextCommentId: 1
